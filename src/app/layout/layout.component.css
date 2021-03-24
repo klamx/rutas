@@ -1,0 +1,30 @@
+p {
+  font-size: 40px;
+  color: #cdd0e4;
+}
+
+hr {
+  border-color: var(--strong-orange);
+  border-width: 3px;
+  max-width: 65px;
+}
+
+.layout {
+  background: url(../../assets/img/img.jpg);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.btn-xl {
+  background: var(--strong-orange);
+  border-color: var(--strong-orange);
+  border-radius: 30px;
+  padding: 1rem 2 rem;
+}
+
+.btn-xl:hover {
+  background: var(--weak-orange);
+  border-color: var(--weak-orange);
+}

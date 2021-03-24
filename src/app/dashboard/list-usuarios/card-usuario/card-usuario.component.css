@@ -1,0 +1,17 @@
+img {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.btn-xl {
+  background: var(--strong-orange);
+  border-color: var(--strong-orange);
+  border-radius: 30px;
+  padding: 1rem 2 rem;
+}
+
+.btn-xl:hover {
+  background: var(--weak-orange);
+  border-color: var(--weak-orange);
+}

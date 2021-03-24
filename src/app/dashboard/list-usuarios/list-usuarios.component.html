@@ -1,0 +1,8 @@
+<div *ngIf="loading" class="row d-flex justify-content-center spin">
+  <div class="spinner-border"></div>
+</div>
+<div *ngIf="!loading" class="row">
+  <div *ngFor="let usuario of listUsuarios" class="col-12 col-md-4 user">
+    <app-card-usuario [user]="usuario" style="margin: 30px"></app-card-usuario>
+  </div>
+</div>

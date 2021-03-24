@@ -1,0 +1,35 @@
+<div *ngIf="loading" class="row d-flex justify-content-center spin">
+  <div class="spinner-border"></div>
+</div>
+<div *ngIf="!loading" class="row d-flex justify-content-center">
+  <div class="col-lg-2"></div>
+  <div class="col-12 col-lg-8">
+    <div class="card">
+      <div class="d-flex justify-content-center">
+        <img
+          [src]="imgUrl"
+          class="card-img-top img-thumbnail"
+          style="max-width: 25rem"
+        />
+      </div>
+      <div class="card-body text-center">
+        <h5 class="card-title">{{ user.name }}</h5>
+        <ul class="list-group text-left">
+          <li class="list-group-item">
+            <strong>email:</strong> {{ user.email }}
+          </li>
+          <li class="list-group-item">
+            <strong>genero:</strong> {{ user.gender }}
+          </li>
+        </ul>
+        <button
+          [routerLink]="['/dashboard']"
+          class="btn btn-xl btn-block text-light"
+        >
+          Volver
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-2"></div>
+</div>
